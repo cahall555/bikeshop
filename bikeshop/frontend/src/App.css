@@ -1,0 +1,62 @@
+.App {
+  text-align: left;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/*image container*/
+.imgcontainer {
+  position: relative;
+  font-family: 'Courier New', Courier, monospace;
+}
+/*text block for image*/
+.txtblock {
+  position: absolute;
+  bottom: 25%;
+  left: 10%;
+  width: 75%;
+  padding: 20px;
+  font-weight: bold;
+  background-color: white;
+  color: black;
+  opacity: 0.5;
+  filter: alpha(opacity=50);/*IE 8*/
+}
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+      width: 100%;
+      padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+      float: none;
+      width: 100%;
+  }
+}
