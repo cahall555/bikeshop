@@ -16,8 +16,8 @@
     font-family: 'Courier New', Courier, monospace;
 }
 
-.header.about {
-    --headerImage: url('../assets/aboutus.jpeg');
+.header a {
+    background-image: url('../assets/aboutus.jpeg');
 }
 
  /* The navbar container */
