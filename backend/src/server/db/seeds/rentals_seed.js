@@ -3,8 +3,8 @@ exports.seed = (knex, Promise) => {
   .then(() => {
     return knex('rentals').insert({
       pickupdate: '07/29/2018',
-      time: '1:00',
-      city: 'Denver',
+      rentaltime: '1:00',
+      city: 1,
       firstname: 'Bella',
       lastname: 'Bug'
     });
@@ -12,8 +12,8 @@ exports.seed = (knex, Promise) => {
   .then(() => {
     return knex('rentals').insert({
       pickupdate: '08/03/2018',
-      time: '3:00',
-      city: 'Boulder',
+      rentaltime: '3:00',
+      city: 2,
       firstname: 'Maci',
       lastname: 'Pie'
     });
@@ -21,8 +21,8 @@ exports.seed = (knex, Promise) => {
   .then(() => {
     return knex('rentals').insert({
       pickupdate: '08/17/2018',
-      time: '2:00',
-      city: 'Colorado Springs',
+      rentaltime: '2:00',
+      city: 3,
       firstname: 'Nora',
       lastname: 'Dora'
     });

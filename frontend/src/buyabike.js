@@ -10,7 +10,7 @@ class Buyabike extends Component {
   render() {
     return (
       <div className="App">
-      <p className="App-intro">
+      
       <Card>
       <h2>Bikes</h2>
             <Gallery>
@@ -20,7 +20,7 @@ class Buyabike extends Component {
                 <div class="desc">$600</div>
             </Gallery>
       </Card>
-      </p>
+      
     </div>
     );
   }

@@ -8,6 +8,7 @@ import Card from './components/card'
 import Header from './components/header'
 import Footer from './components/footer'
 import Form from './components/form'
+import Navigation from './components/navigation'
 
 
 import AboutPage from './aboutpage'
@@ -48,6 +49,7 @@ class App extends Component {
       <div className="App">
         <div>
         </div>
+        <Navigation/>
         <Header/>
         <Switch>
         <Route exact path='/' component={Home} />
