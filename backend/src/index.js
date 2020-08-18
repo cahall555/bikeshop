@@ -1,5 +1,5 @@
 const Koa = require('koa');
-const bodyParser = require('koa-bodyparser');
+const bodyParser = require('koa-body-parser');
 
 const indexRoutes = require('./server/routes/index');
 const rentalsRoutes = require('./server/routes/rentals');
