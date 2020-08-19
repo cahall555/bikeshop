@@ -5,17 +5,17 @@ import './form.css';
 function validateForm() {
     var date = document.forms["rent"]["date"].value;
     var fname = document.forms["rent"]["fname"].value;
-    if (date == "") {
+    if (date === "") {
         alert("Please select a date.");
         return false;
     }
-    if (fname=="") {
+    if (fname==="") {
         alert("Please fill in your name");
         return false;
     }
 }
 
-class Form extends React.Component {
+class Form extends Component {
 
     constructor(props){
         super(props);
@@ -72,11 +72,13 @@ class Form extends React.Component {
 
     /* Render form*/
     render() {
+    
         let optionItems = this.state.cities.map((city)=>{
             return (<option value = {city.id}>{city.city} </option>)
         })
 
       return <div>
+          <validateForm>
                 <form onSubmit={this.handleSubmit} className="form" name="rent" action="#" >
                     <div className="row">
                         <div className="col-33">
@@ -119,7 +121,9 @@ class Form extends React.Component {
                     </div>
                     <input type="submit" value="Submit"></input>
                 </form>
+                </validateForm>
             </div>;
+        
     }
   }
 export default Form;  

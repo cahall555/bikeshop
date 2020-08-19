@@ -1,10 +1,9 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 
 import Card from './components/card'
 import Gallery from './components/gallery'
-
+import forsale from './assets/forsale.jpeg';
 
 class Buyabike extends Component {
   render() {
@@ -14,9 +13,9 @@ class Buyabike extends Component {
       <Card>
       <h2>Bikes</h2>
             <Gallery>
-                  <a target="_blank" href="./assets/forsale.jpeg">
-                    <img src="./assets/forsale.jpeg" alt="Forsale" width="600" height="400"></img>
-                  </a>
+            <div className="imgcontainer">
+              <img src={forsale} alt="For Sale" width="25%" height="25%"></img>
+              </div>
                 <div class="desc">$600</div>
             </Gallery>
       </Card>

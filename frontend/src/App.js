@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import symbol from './assets/symbol.jpeg';
 import './App.css';
-import { Route, BrowserRouter, Switch, IndexRoute } from 'react-router-dom';
+import { Route, BrowserRouter, Switch } from 'react-router-dom';
 
 import Card from './components/card'
 import Header from './components/header'
@@ -27,7 +26,7 @@ const Home = () =>  (<p className="App-intro">
 <Card>
   <h2>Why Bike</h2>
   <div className="imgcontainer">
-    <img src={symbol} width='100%'/>
+    <img src={symbol} alt="symbol" width='100%'/>
     <div className="txtblock">
         <i className="fa fa-bicycle"> Convenient</i>
         <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>

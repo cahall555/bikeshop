@@ -1,10 +1,8 @@
 import React, { Component } from 'react';
 import './header.css';
-import { Router, browserHistory } from 'react-router';
 import { Link } from 'react-router-dom';
-import variables from 'react-css-variables'
 
-class Navigation extends React.Component {
+class Navigation extends Component {
     render() {
       return <div>
         <div className="topnav">
