@@ -43,6 +43,7 @@ class Form extends Component {
     }
 
     handleSubmit(event){
+        validateForm();
         console.log(event);
         event.preventDefault();
         const date = document.forms["rent"]["date"].value;
@@ -77,8 +78,7 @@ class Form extends Component {
             return (<option value = {city.id}>{city.city} </option>)
         })
 
-      return <div>
-          <validateForm>
+      return <div>    
                 <form onSubmit={this.handleSubmit} className="form" name="rent" action="#" >
                     <div className="row">
                         <div className="col-33">
@@ -121,7 +121,7 @@ class Form extends Component {
                     </div>
                     <input type="submit" value="Submit"></input>
                 </form>
-                </validateForm>
+            
             </div>;
         
     }
