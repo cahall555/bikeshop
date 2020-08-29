@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import * as React from 'react';
 import symbol from './assets/symbol.jpeg';
 import './App.css';
 import { Route, BrowserRouter, Switch } from 'react-router-dom';
@@ -12,6 +12,7 @@ import Navigation from './components/navigation'
 
 import AboutPage from './aboutpage'
 import Buyabike from './buyabike'
+import Page from './page'
 
 const Home = () =>  (<p className="App-intro">
 <Card>
@@ -41,7 +42,7 @@ const Home = () =>  (<p className="App-intro">
 </Card>
 </p>);
 
-class App extends Component {
+class App extends React.Component {
   render() {
     return (
     <BrowserRouter>
@@ -54,6 +55,7 @@ class App extends Component {
         <Route exact path='/' component={Home} />
         <Route path='/aboutpage' component={AboutPage} />
         <Route path='/buyabike' component={Buyabike} />
+        <Route path='/page' component={Page} />
         </Switch>
         <Footer/>
       </div>
