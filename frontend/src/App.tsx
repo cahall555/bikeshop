@@ -1,5 +1,4 @@
 import * as React from 'react';
-import symbol from './assets/symbol.jpeg';
 import './App.css';
 import { Route, BrowserRouter, Switch } from 'react-router-dom';
 
@@ -9,10 +8,10 @@ import Footer from './components/footer'
 import Form from './components/form'
 import Navigation from './components/navigation'
 
-
 import AboutPage from './aboutpage'
 import Buyabike from './buyabike'
 import Page from './page'
+const symbol = require('./assets/symbol.jpeg');
 
 const Home = () =>  (<p className="App-intro">
 <Card>
