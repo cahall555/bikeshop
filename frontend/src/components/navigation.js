@@ -1,8 +1,8 @@
-import React, { Component } from 'react';
+import * as React from 'react';
 import './header.css';
 import { Link } from 'react-router-dom';
 
-class Navigation extends Component {
+class Navigation extends React.Component {
     render() {
       return <div>
         <div className="topnav">

@@ -4,8 +4,7 @@ import { useCycle } from "framer-motion";
 import "./page.css";
 
 
-class Page extends React.Component {
-  render() {
+function Page() {
     const [animate, cycle] = useCycle(
       { scale: 1.5, rotate: 0 },
       { scale: 1.0, rotate: 90 }
@@ -19,7 +18,6 @@ class Page extends React.Component {
         background={"#fff"}
       />
     );
-  }
 }
 
 export default Page;
