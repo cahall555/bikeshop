@@ -8,9 +8,9 @@ import Footer from './components/footer'
 import Form from './components/form'
 import Navigation from './components/navigation'
 
+
 import AboutPage from './aboutpage'
 import Buyabike from './buyabike'
-import Page from './page'
 const symbol = require('./assets/symbol.jpeg');
 
 const Home = () =>  (<p className="App-intro">
@@ -54,7 +54,6 @@ class App extends React.Component {
         <Route exact path='/' component={Home} />
         <Route path='/aboutpage' component={AboutPage} />
         <Route path='/buyabike' component={Buyabike} />
-        <Route path='/page' component={Page} />
         </Switch>
         <Footer/>
       </div>

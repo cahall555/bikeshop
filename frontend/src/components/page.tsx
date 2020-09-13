@@ -3,8 +3,8 @@ import  { Frame } from "framer";
 import { useCycle } from "framer-motion";
 import "./page.css";
 
-
-function Page() {
+export function Page() {
+    
     const [animate, cycle] = useCycle(
       { scale: 1.5, rotate: 0 },
       { scale: 1.0, rotate: 90 }

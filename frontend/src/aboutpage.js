@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 
 import Card from './components/card'
+import Page from './components/page'
 import './assets/aboutus.jpeg'
 
 class AboutPage extends Component {
@@ -13,7 +14,7 @@ class AboutPage extends Component {
         <h2>Our Story</h2>
         <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
         </Card>
-        
+        <Page/>
       </div>
     );
   }
