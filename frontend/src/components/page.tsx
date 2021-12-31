@@ -15,7 +15,7 @@ export function Page() {
         onTap={() => cycle()}
         size={150}
         radius={30}
-        background={"#fff"}
+        background={"#67808e"}
       />
     );
 }
