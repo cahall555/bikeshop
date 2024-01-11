@@ -3,7 +3,6 @@ import './App.css';
 import { Route } from 'react-router-dom';
 
 import Card from './components/card'
-import Page from './components/page'
 import './assets/aboutus.jpeg'
 
 const Home = () =>  (<p className="App-intro">
@@ -16,7 +15,6 @@ const Home = () =>  (<p className="App-intro">
 </Card>
 <Card>
   <h2>Why Bike</h2>
-  <Page/>
 </Card>
 </p>);
 

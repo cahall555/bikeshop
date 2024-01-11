@@ -7,7 +7,7 @@ import Header from './components/header'
 import Footer from './components/footer'
 import Form from './components/form'
 import Navigation from './components/navigation'
-import Page from './components/page'
+//import Page from './components/page'
 
 
 import AboutPage from './aboutpage'
@@ -51,7 +51,6 @@ class App extends React.Component {
         </div>
         <Navigation/>
         <Header/>
-        <Page/>
         <Switch>
         <Route exact path='/' component={Home} />
         <Route path='/aboutpage' component={AboutPage} />

@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import './App.css';
 
 import Card from './components/card'
-import Page from './components/page'
 import forsale from './assets/forsale.jpeg';
 
 class Buyabike extends Component {
@@ -20,7 +19,6 @@ class Buyabike extends Component {
       </Card>
       <Card>
         <div>
-          <Page/> 
         </div>
         
       </Card>
