@@ -1,0 +1,31 @@
+version: '3.8'
+services:
+  db:
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_USER: ${DB_USER}
+      POSTGRES_PASSWORD: ${DB_PASSWORD}
+  
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+      - "8080:8080"
+  backend:
+    build:
+      context: ./backend
+      dockerfile: ./Dockerfile
+    env_file:
+      "./.env"
+    ports:
+      - "1337:1337"
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: ./Dockerfile
+    image: "app-frontend"
+    ports:
+      - "3000:3000"
+    links:
+      - "backend"
