@@ -1,0 +1,19 @@
+FROM node
+
+WORKDIR /src
+
+COPY package.json /src
+
+COPY package-lock.json /src
+
+RUN npm install
+
+RUN npm install -g nodemon
+
+RUN npm install -g knex
+
+COPY . /src
+
+EXPOSE 1337
+
+CMD ["npm", "start"]
