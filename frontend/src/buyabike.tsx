@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
-import './App.css';
+//import './App.css';
 
 import Card from './components/card'
 import forsale from './assets/forsale.jpeg';
+import Form from './components/form';
 
 class Buyabike extends Component {
   render() {
@@ -22,6 +23,7 @@ class Buyabike extends Component {
         </div>
         
       </Card>
+<Form/>
     </div>
     );
   }

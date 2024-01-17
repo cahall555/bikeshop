@@ -1,10 +1,9 @@
 import React, { Component } from 'react';
-import './footer.css';
 
 class Footer extends Component {
     render() {
-      return <div className="footer">
-         <h2>Footer</h2>
+      return <div className="flex flex-grow w-screen fixed bg-orange z-40 animate-changeHeight">
+         <h2 className="text-brown">Footer</h2>
     </div>;
     }
   }
