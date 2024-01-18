@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Route, BrowserRouter, Switch } from "react-router-dom";
+import { Route, BrowserRouter, Routes } from "react-router-dom";
 
 import Card from "./components/card";
 import Header from "./components/header";
@@ -20,7 +20,7 @@ const Home = () => (
 			</div>
 		</div>
 		<div>
-			<div className="flex flex-col w-screen h-screen bg-brown snap-y snap-mandatory">
+			<div className="flex flex-col w-full h-screen bg-brown snap-y snap-mandatory">
 				<h2 className="font-carter p-4 pt-16 text-3xl text-orange text-xl"> Environmental Benefits of Riding a Bike </h2>
 				<div className="h-96 w-1/2 p-4 text-yellow text-xl font-tenor bg-brown">
 					<i className="fa fa-bicycle">
@@ -91,21 +91,20 @@ class App extends React.Component {
 			<BrowserRouter>
 				<div className="App">
 					<Navigation />
-					<Switch>
+					<Routes>
 						<Route
-							exact
 							path="/"
-							component={Home}
+							element={<Home />}
 						/>
 						<Route
 							path="/aboutpage"
-							component={AboutPage}
+							element={<AboutPage />}
 						/>
 						<Route
 							path="/buyabike"
-							component={Buyabike}
+							element={<Buyabike />}
 						/>
-					</Switch>
+					</Routes>
 					<Footer />
 				</div>
 			</BrowserRouter>
